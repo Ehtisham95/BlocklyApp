@@ -1,0 +1,252 @@
+[{
+  "type": "movement_robot",
+  "lastDummyAlign0": "CENTRE",
+  "message0": "Move the robot for %1 second(s), %2 with an angle of %3 and %4 speed",
+  "args0": [
+    {
+      "type": "field_number",
+      "name": "time",
+      "value": 5,
+      "min": 0,
+      "precision": 1
+    },
+    {
+      "type": "input_dummy",
+      "align": "CENTRE"
+    },
+    {
+      "type": "field_number",
+      "name": "lin_angle",
+      "value": 90,
+      "min": 0,
+      "max": 359,
+      "precision": 1
+    },
+    {
+      "type": "field_number",
+      "name": "lin_speed",
+      "value": 5,
+      "min": 0,
+      "max": 10,
+      "precision": 1
+    }
+  ],
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 180,
+  "tooltip": "",
+  "helpUrl": ""
+},
+{
+  "type": "movement_stop",
+  "lastDummyAlign0": "RIGHT",
+  "message0": "Stop the robot",
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 180,
+  "tooltip": "",
+  "helpUrl": ""
+},
+{
+  "type": "movement_speed",
+  "lastDummyAlign0": "CENTRE",
+  "message0": "Set %1 speed  %2 with an angle of %3 degree(s)",
+  "args0": [
+    {
+      "type": "field_number",
+      "name": "lin_speed",
+      "value": 5,
+      "min": 0,
+      "max": 10,
+      "precision": 1
+    },
+    {
+      "type": "input_dummy",
+      "align": "CENTRE"
+    },
+    {
+      "type": "field_number",
+      "name": "lin_angle",
+      "value": 90,
+      "min": 0,
+      "max": 359,
+      "precision": 1
+    }
+  ],
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 180,
+  "tooltip": "",
+  "helpUrl": ""
+},
+{
+  "type": "control_exit",
+  "lastDummyAlign0": "CENTRE",
+  "message0": "Exit the program",
+  "previousStatement": null,
+  "colour": 20,
+  "tooltip": "",
+  "helpUrl": ""
+},
+{
+  "type": "control_wait",
+  "lastDummyAlign0": "CENTRE",
+  "message0": "Wait For %1 Seconds",
+  "args0": [
+    {
+      "type": "field_number",
+      "name": "time",
+      "value": 0,
+      "min": 0,
+      "precision": 1
+    }
+  ],
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 20,
+  "tooltip": "",
+  "helpUrl": ""
+},
+{
+  "type": "app_headlights",
+  "message0": "Turn Headlights On %1",
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "NAME",
+      "check": "Boolean",
+      "align": "CENTRE"
+    }
+  ],
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 230,
+  "tooltip": "",
+  "helpUrl": ""
+},
+{
+  "type": "app_backlight",
+  "message0": "Turn Tail Lights On %1",
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "NAME",
+      "check": "Boolean",
+      "align": "CENTRE"
+    }
+  ],
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 230,
+  "tooltip": "",
+  "helpUrl": ""
+},
+{
+  "type": "rotation_rotate",
+  "lastDummyAlign0": "CENTRE",
+  "message0": "Rotate the robot for %1 seconds(s)  %2 with %3 speed",
+  "args0": [
+    {
+      "type": "field_number",
+      "name": "time",
+      "value": 0,
+      "min": 0,
+      "precision": 1
+    },
+    {
+      "type": "input_dummy",
+      "align": "RIGHT"
+    },
+    {
+      "type": "field_number",
+      "name": "speed",
+      "value": 5,
+      "min": 0,
+      "max": 10,
+      "precision": 1
+    }
+  ],
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 330,
+  "tooltip": "",
+  "helpUrl": ""
+},
+{
+  "type": "rotation_strafe",
+  "lastDummyAlign0": "CENTRE",
+  "message0": "Strafe for %1 seconds at the angular speed of %2 %3 and move to the angle of %4 degree(s) and %5 %6 speed",
+  "args0": [
+    {
+      "type": "field_number",
+      "name": "time",
+      "value": 5,
+      "min": 0,
+      "precision": 1
+    },
+    {
+      "type": "field_number",
+      "name": "ang_speed",
+      "value": 5,
+      "min": 1,
+      "max": 10,
+      "precision": 1
+    },
+    {
+      "type": "input_dummy",
+      "align": "CENTRE"
+    },
+    {
+      "type": "field_number",
+      "name": "lin_angle",
+      "value": 90,
+      "min": 0,
+      "max": 359,
+      "precision": 1
+    },
+    {
+      "type": "input_dummy",
+      "align": "CENTRE"
+    },
+    {
+      "type": "field_number",
+      "name": "lin_speed",
+      "value": 5,
+      "min": 1,
+      "max": 10,
+      "precision": 1
+    }
+  ],
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 330,
+  "tooltip": "",
+  "helpUrl": ""
+},
+{
+  "type": "loop_repeat",
+  "message0": "Repeat %1 times %2 Do %3",
+  "args0": [
+    {
+      "type": "field_number",
+      "name": "times",
+      "value": 0,
+      "min": 1,
+      "precision": 1
+    },
+    {
+      "type": "input_dummy",
+      "align": "CENTRE"
+    },
+    {
+      "type": "input_statement",
+      "name": "Do",
+      "align": "CENTRE"
+    }
+  ],
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 120,
+  "tooltip": "",
+  "helpUrl": ""
+}]

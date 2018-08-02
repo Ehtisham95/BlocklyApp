@@ -1,0 +1,83 @@
+[
+    
+    {
+  "type": "movement_robot",
+  "lastDummyAlign0": "CENTRE",
+  "message0": "Move the Robot for %1 second(s), %2 with an angle of %3 and %4 speed",
+  "args0": [
+    {
+      "type": "field_number",
+      "name": "mov_time",
+      "value": 0,
+      "min": 0
+    },
+    {
+      "type": "input_dummy"
+    },
+    {
+      "type": "field_angle",
+      "name": "mov_angle",
+      "angle": 90
+    },
+    {
+      "type": "field_dropdown",
+      "name": "mov_speed",
+      "options": [
+        [
+          "Slow",
+          "sspeed"
+        ],
+        [
+          "Normal",
+          "nspeed"
+        ],
+        [
+          "Fast",
+          "fspeed"
+        ]
+      ]
+    }
+  ],
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 180,
+  "tooltip": "",
+  "helpUrl": ""
+},
+    {
+  "type": "movement_stop",
+  "message0": "Stop Robot",
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 180,
+  "tooltip": "",
+  "helpUrl": ""
+},
+    {
+  "type": "movement_speed",
+  "message0": "Set %1 speed",
+  "args0": [
+    {
+      "type": "field_dropdown",
+      "name": "setspeed",
+      "options": [
+        [
+          "Slow",
+          "sspeed"
+        ],
+        [
+          "Medium",
+          "mspeed"
+        ],
+        [
+          "Fast",
+          "fspeed"
+        ]
+      ]
+    }
+  ],
+  "colour": 180,
+  "tooltip": "",
+  "helpUrl": ""
+}
+]

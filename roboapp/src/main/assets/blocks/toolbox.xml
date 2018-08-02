@@ -1,0 +1,53 @@
+<xml xmlns="http://www.w3.org/1999/xhtml" id="toolbox" style="display: none;">
+  <category name="Movements" colour="#5ba5a5">
+    <block type="movement_robot">
+      <field name="time">1</field>
+      <field name="lin_angle">90</field>
+      <field name="lin_speed">5</field>
+    </block>
+    <block type="movement_speed">
+      <field name="lin_speed">5</field>
+      <field name="lin_angle">90</field>
+    </block>
+    <block type="movement_stop"></block>
+  </category>
+  <category name="Rotations" colour="#a55b93">
+    <block type="rotation_strafe">
+      <field name="ang_angle">90</field>
+      <field name="lin_angle">90</field>
+      <field name="lin_speed">5</field>
+      <field name="time">5</field>
+    </block>
+    <block type="rotation_rotate">
+      <field name="angle">90</field>
+      <field name="speed">5</field>
+    </block>
+  </category>
+  <category name="Controls" colour="#a56d5b">
+    <block type="control_wait">
+      <field name="time">0</field>
+    </block>
+    <block type="control_exit"></block>
+  </category>
+  <category name="Loops" colour="#6da55b">
+    <block type="loop_repeat">
+      <field name="times">0</field>
+    </block>
+  </category>
+  <category name="Appearance" colour="#5b6da5">
+    <block type="app_headlights">
+      <value name="NAME">
+        <block type="logic_boolean">
+          <field name="BOOL">FALSE</field>
+        </block>
+      </value>
+    </block>
+    <block type="app_backlight">
+      <value name="NAME">
+        <block type="logic_boolean">
+          <field name="BOOL">FALSE</field>
+        </block>
+      </value>
+    </block>
+  </category>
+</xml>

@@ -1,0 +1,51 @@
+<xml xmlns="http://www.w3.org/1999/xhtml" id="toolbox" style="display: none;">
+  <category name="Movements" colour="#5ba5a5">
+    <block type="movement_robot">
+      <field name="time">1</field>
+      <field name="angle">90</field>
+      <field name="NAME">slow</field>
+    </block>
+    <block type="movement_stop"></block>
+    <block type="movement_speed">
+      <field name="setspeed">sspeed</field>
+      <field name="NAME">90</field>
+    </block>
+  </category>
+  <category name="Controls" colour="#a56d5b">
+    <block type="control_for_do">
+      <field name="time">0</field>
+    </block>
+    <block type="control_wait">
+      <field name="time">0</field>
+    </block>
+    <block type="control_exit"></block>
+  </category>
+  <category name="Loops" colour="#6da55b">
+    <block type="controls_repeat_ext">
+      <value name="TIMES">
+        <shadow type="math_number">
+          <field name="NUM">10</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="controls_whileUntil">
+      <field name="MODE">WHILE</field>
+    </block>
+  </category>
+  <category name="Appearance" colour="#5b6da5">
+    <block type="app_headlights">
+      <value name="NAME">
+        <block type="logic_boolean">
+          <field name="BOOL">FALSE</field>
+        </block>
+      </value>
+    </block>
+    <block type="app_backlight">
+      <value name="NAME">
+        <block type="logic_boolean">
+          <field name="BOOL">FALSE</field>
+        </block>
+      </value>
+    </block>
+  </category>
+</xml>
