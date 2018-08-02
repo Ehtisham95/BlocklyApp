@@ -29,3 +29,9 @@ Want to contribute? Great! First, read [our guidelines for contributors][7].
 [5]: https://groups.google.com/forum/#!forum/blockly "Blockly developer forum"
 [6]: https://developers.google.com/blockly/registration "Blockly developer registration form"
 [7]: https://github.com/google/blockly-android/blob/master/CONTRIBUTING.md "Contributor guidelines"
+
+
+NOTE: This project contains created module (roboapp) and is designed for a STEM based robot to send a String to a WIFI Server and wait for a response from the server. The Blocks in the module (roboapp) were created using blockly developer tools:
+https://developers.google.com/blockly/guides/create-custom-blocks/blockly-developer-tools
+
+Kindly read the Introduction To Blockly before getting into the project.
